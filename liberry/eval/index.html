@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eval()</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>eval()</h1>
+<p>"The eval() function evaluates JavaScript code represented as a string... If the string represents an expression, eval() evaluates the expression." - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval">Mozilla.org</a></p>
+
+<IMG SRC="drevil.gif" alt="Dr.Evil's Math Equation">
+<h2>What is this?</h2>
+<p>It sounds like a lot of people think <a href="https://www.nczonline.net/blog/2013/06/25/eval-isnt-evil-just-misunderstood/">this function is evil</a>, so maybe it shouldn't be used that much.</p>
+<p>"eval() is a dangerous function, which executes the code it's passed with the privileges of the caller. If you run eval() with a string that could be affected by a malicious party, you may end up running malicious code on the user's machine with the permissions of your webpage / extension. More importantly, third party code can see the scope in which eval() was invoked, which can lead to possible attacks in ways to which the similar Function is not susceptible." <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval">Mozilla.org</a></p>
+
+<h2>Example of Misuse</h2>
+<p><div>
+<h3>Mistake</h3><p>function isChecked(optionNumber) {
+    <p>return eval("forms[0].option" + optionNumber + ".checked");</p>
+<p>}</p>
+
+<p>var result = isChecked(1);</p></p></p></div>
+
+<p><div><h3>Correct</h3><p>function isChecked(optionNumber) {
+    <p>return forms[0]["option" + optionNumber].checked;</p>
+<p>}</p>
+
+<p>var result = isChecked(1);</p></p></p>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

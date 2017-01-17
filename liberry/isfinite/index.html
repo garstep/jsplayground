@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>isFinite()</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>isFinite()</h1>
+<p>The global isFinite() function determines whether the passed value is a finite number. If needed, the parameter is first converted to a number. - <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isFinite">Mozilla.org</a></p>
+
+<img src="TeaSet.jpg" alt="a Fine Set of China" style="width:304px;height:228px;">
+<h6>That's my mom's China. It's fine..aight?</h6>
+
+<h2>Example Code</h2>
+<p><div>
+	<p>
+	
+	<h3>Is it Finite?</h3>
+	<h5>
+	<p>isFinite(Infinity);  // false</p>
+	<p>isFinite(NaN);       // false</p>
+	<p>isFinite(-Infinity); // false</p>
+	<p>isFinite(0);         // true
+	<p>isFinite(2e64);      // true</p>
+	<p>isFinite(910);       // true</p>
+	<p>isFinite(null);      // true</p>
+	<p>isFinite("0");       // true, would've been false</p> 
+	<p>with the // more robust Number.isFinite("0")</p>
+	</h5>
+</div><p>
+
+<h2>Real World Application</h2>
+<p>You're at your friend Ricky's house and he still lives with his mom. He's very paranoid about you breaking his mom's fine China, so he reminds you to be careful around it constantly. Everytime he reminds you, you have to return a string (vocally tell him) "stop worrying about it".</p>
+<p>He reminds you about it so many times that you want to figure out how many more times he could possibly ask you. You build a program that uses python machine learning tactics and automatically generates probability equations that will predict the maximum amount of times he could could possibly remind you about the china.</p>
+<p>Your robot's not perfect, however, and sometimes it generates an equation that doesn't factor in that at some point, being a human, Ricky will pass away, leaving him no ability to remind you about the china after that time. Some equations predict that based on his current rate of reminders, he will continue on forever. You only want to dig through equations that might be good predictors of the estimate, including Rick'y inability to live forever.</p>
+<p>You could use <strong>isFinite()</strong> inside of a javascript function that will automatically trash any auto-generated equations that predict Ricky will keep talking about the China forever. These would be equations that will predict the number of times he will ask you is infinite. That way, you can astutely spend your time only looking through feasible equations that could help you answer your question. This is a very important task to you wouldn't want to waste any time doing it inefficiently.</p>
+
+<h2>Similar Application</h2>
+<div>
+	<p>Number.isFinite(Infinity);  // false</p>
+	<p>Number.isFinite(NaN);       // false</p>
+	<p>Number.isFinite('0');       // false, would've been true with // global isFinite('0')</p>
+</div>
+<p> </p>
+<p> </p>
+<h3>I didn't use any active code describing this function, but just to be very meta, here's the code for this webpage</h3>
+
+<p data-height="365" data-theme-id="dark" data-slug-hash="ggLrRx" data-default-tab="html,result" data-user="GarStep" data-embed-version="2" data-pen-title="JS Playground - Using isFinite()" data-preview="true" class="codepen">See the Pen <a href="http://codepen.io/GarStep/pen/ggLrRx/">JS Playground - Using isFinite()</a> by Garrett Stephens (<a href="http://codepen.io/GarStep">@GarStep</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+
+
+<script src="main.js"></script>
+</body>
+</html>

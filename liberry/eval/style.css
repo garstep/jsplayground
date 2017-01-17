@@ -1,0 +1,29 @@
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  padding: 2rem;
+  margin-top: .25em;
+  font-size: 7rem;
+  letter-spacing: 1rem;
+}
+
+html {
+	padding: 2rem;
+  margin-top: .25em;
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+body {
+	font-size: 18px;
+}
+
+div {
+	background-color: #d3d3d3;
+	padding: 2rem;
+}

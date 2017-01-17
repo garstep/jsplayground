@@ -50,3 +50,61 @@ h1 span:nth-child(11) {
 h1 span:nth-child(12) {
   color: rgba(#D4FEA1, 1);
 }
+
+
+
+
+
+
+
+
+body {
+  height: 100%;
+}
+
+html, body {
+  padding: 50;
+  margin: 0;
+  font-family: "Nocturno Display Medium 4", Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+}
+
+body {
+    background: url(images/building.jpg);
+  background-size: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.blend {
+  mix-blend-mode: exclusion;
+  color: white;
+  display: block;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 6vw;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+blockquote {
+  margin-bottom: 100px;
+  line-height: 1.1;
+}

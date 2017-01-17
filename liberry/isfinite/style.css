@@ -1,0 +1,38 @@
+@media (min-width: 20ex) {
+  
+
+h1 {
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+  padding: 2rem;
+  margin-top: .25em;
+  font-size: 7rem;
+  letter-spacing: .5rem;
+}
+
+html {
+	padding: 2rem;
+  width: 85%;
+}
+
+IMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+body {
+	font-size: 18px;
+}
+
+div {
+	background-color: #d3d3d3;
+	padding: 2rem;
+}
+
+h6 {
+  text-align: center;
+}
+
+h5 {
+  font-size:14px;
+}}
